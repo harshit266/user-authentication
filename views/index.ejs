@@ -1,0 +1,35 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head %>
+
+    <link rel="stylesheet" type="text/css" href="static/semantic/dist/semantic.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="static/semantic/dist/semantic.min.js"></script>
+</head>
+<body class="container">
+
+<header>
+    <% include ./partials/header %>
+</header>
+
+<main>
+<form method="post" action="/login">
+      <label>Enter User Name</label><br>
+      <input type="text" name="username" placeholder="Enter User name..." required>
+      <input type="password" name="password" placeholder="password..." required>
+      <input type="submit" value="Add Name">
+</form>
+</main>
+
+<footer>
+    <% include ./partials/footer %>
+</footer>
+
+</body>
+</html>
